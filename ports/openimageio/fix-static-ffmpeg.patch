@@ -1,5 +1,4 @@
 diff --git a/src/python/CMakeLists.txt b/src/python/CMakeLists.txt
-index dc260a7..433ffbb 100644
 --- a/src/python/CMakeLists.txt
 +++ b/src/python/CMakeLists.txt
 @@ -6,6 +6,13 @@

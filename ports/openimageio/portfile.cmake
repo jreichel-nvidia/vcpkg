@@ -1,14 +1,15 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO OpenImageIO/oiio
-    REF v2.3.17.0
-    SHA512 25cb1a671e7cd5154e363eef178ab091fd7d55868746a4394340567a794f6c6f0295e58721a5b4ee8bf66b4cc0e6a01c3e82f9cc9de9953ae349d45738a04700
+    REF v2.4.5.0
+    SHA512 c7a4283b78197c262d8da31460ce8b07b44546f822142e32e6c1ea22376e1c4b9cfe9c39cc0994987c6c4f653c1f2764057944da97a3a090bf1bcb74a2a0b2c2
     HEAD_REF master
     PATCHES
         fix-dependencies.patch
         fix-static-ffmpeg.patch
         fix-openexr-dll.patch
         imath-version-guard.patch
+        fix-openimageio.patch
 )
 
 file(REMOVE_RECURSE "${SOURCE_PATH}/ext")
